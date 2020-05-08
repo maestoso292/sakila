@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 08, 2020 at 09:24 PM
+-- Generation Time: May 08, 2020 at 11:40 PM
 -- Server version: 5.6.47
 -- PHP Version: 7.3.6
 
@@ -47890,7 +47890,7 @@ ALTER TABLE `staff`
 -- Constraints for table `store`
 --
 ALTER TABLE `store`
-  ADD CONSTRAINT `FK` FOREIGN KEY (`address_id`) REFERENCES `address` (`address_id`) ON DELETE SET NULL;
+  ADD CONSTRAINT `FK` FOREIGN KEY (`address_id`) REFERENCES `address` (`address_id`) ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
