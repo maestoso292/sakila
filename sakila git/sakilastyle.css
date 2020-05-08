@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+.sidebar{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidebar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a.link:hover{
+    color: #588c7e;
+}
+
+.sidebar .close{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    margin-left: 50px;
+}
+
+.tableWrap{
+    margin-top:10px;
+    height: 75vh;
+    overflow-x:auto;
+}
+
+table{
+    border-collapse: collapse;
+    width : 100%;
+    color : #588c7e;
+    font-family : monospace;
+    text-align : left;
+}
+
+tr,td{
+    padding-left: 5px;
+    border : 2px solid white;
+    border-collapse: collapse;
+    width : auto;
+    color : #588c7e;
+    font-family : monospace;
+    text-align : left;
+}
+th{
+    padding: 5px;
+    border : 2px solid white;
+    background-color :#588c7e;
+    color : white;
+}
+tr:nth-child(even){
+    background-color : #f2f2f2;
+}
+
+.header{
+    background-color: #588c7e;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    width: 100%
+}
+
+.collapsible{
+    background-color: #588c7e;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+}
+
+.active, .collapsible:hover{
+    background-color: #6fb09e;
+}
+
+.content, .contentmenu {
+    padding: 30px;
+    display: none;
+    overflow: hidden;
+    background-color: #94b0a8;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: max-height 0.2s ease-out;
+}
+
+.contentmenu {
+    padding: 0px;
+}
+
+input[type=text], input[type=number], input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #588c7e;
+    color: white;
+}
+
+input[type=submit]:hover{
+    background-color: #6fb09e;
+}
+
+body{
+  font-size: calc(10px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.2em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+}
